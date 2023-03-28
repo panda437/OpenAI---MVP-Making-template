@@ -11,7 +11,7 @@ function AddForm() {
   //    const apiKey = import.[`REACT_APP_OpenAIAPIkey`];
 
   const apiKey = import.meta.env.VITE_REACT_APP_OpenAIAPIkey;
-    console.log("API KEY", apiKey);
+   
 const endpoint = "https://api.openai.com/v1/chat/completions";
     
     try {
