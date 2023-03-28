@@ -9,7 +9,7 @@ function AddForm() {
   const fetchData = async (businessName) => {
   //    const apiKey = process.env[`REACT_APP_OpenAIAPIkey`];
 
-  const apiKey = process.env['OpenAIAPIkey'];
+  const apiKey = process.env.REACT_APP.OpenAIAPIkey;
     console.log("API KEY", apiKey);
 const endpoint = "https://api.openai.com/v1/chat/completions";
     
