@@ -2,14 +2,15 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./AddForm.css";
 
+
 function AddForm() {
   const [businessName, setBusinessName] = useState("");
   const [summary, setSummary] = useState(null);
    
   const fetchData = async (businessName) => {
-  //    const apiKey = process.env[`REACT_APP_OpenAIAPIkey`];
+  //    const apiKey = import.[`REACT_APP_OpenAIAPIkey`];
 
-  const apiKey = process.env.REACT_APP_OpenAIAPIkey;
+  const apiKey = import.meta.env.VITE_REACT_APP_OpenAIAPIkey;
     console.log("API KEY", apiKey);
 const endpoint = "https://api.openai.com/v1/chat/completions";
     
